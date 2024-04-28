@@ -1,0 +1,27 @@
+.lista_indicadores{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.botao_indicador{
+    width: 200px;
+    
+    font-size: var(--botão);
+    align-self: center;
+    border-radius: var(--curvatura-canto);
+    padding: 0.5em;
+
+    color: var(--branco);
+}
+
+@media screen and (min-width: 576px) {
+    .botao_indicador{
+        width: 400px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .botao_indicador{
+        width: 600px;
+    }
+}
