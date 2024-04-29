@@ -31,6 +31,7 @@ function criar_indicador(info_indicador){
     botao_indicador.appendChild(nome_botao_indicador)
 
     document.querySelector('.lista_indicadores').appendChild(botao_indicador)
+    botao_indicador.addEventListener('click',()=>{window.location.href=`quadro_de_acoes.html?indicador=${info_indicador.nome}`})
     
 }
 

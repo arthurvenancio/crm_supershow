@@ -1,16 +1,16 @@
 const dados_indicador=[{
-    nome:"Indicador",
+    nome:"Média de Itens na Cesta",
     valor:0
 },
 {
-    nome:"Indicador",
+    nome:"Valor Médio de Itens na Cesta",
     valor:10
 },
 {
-    nome:"Indicador",
+    nome:"Clientes Únicos",
     valor:-10
 },{
-    nome:"Indicador",
+    nome:"Visitas Médias por Cliente",
     valor:-5
 }]
 
