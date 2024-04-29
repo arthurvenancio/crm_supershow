@@ -17,13 +17,13 @@ const dados_indicador=[{
 
 const lojas=[{
     grupo:"Seridó",
-    loja:"Abel Cabral"
+    loja:["Abel Cabral","Coophab"]
 },{
-    grupo:"Seridó",
-    loja:"Coophab"
+    grupo:"Maia",
+    loja:["Maia Satélite","Maia Neópolis"]
 },{
     grupo:"Gomes",
-    loja:"Rosa dos Ventos"
+    loja:["Rosa dos Ventos"]
 }]
 
 const usuarios=[{
