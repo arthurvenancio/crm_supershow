@@ -15,7 +15,7 @@ const dados_indicador=[{
     valor:-5
 }]
 
-const lojas=[{
+const associado=[{
     grupo:"Seridó",
     loja:["Abel Cabral","Coophab"]
 },{
@@ -33,7 +33,7 @@ const usuarios=[{
 }]
 const db={
     dados_indicador,
-    lojas,
+    associado,
     usuarios
 }
 
