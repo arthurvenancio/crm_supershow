@@ -11,14 +11,14 @@
 <body>
     <main class="sem_footer">
         <h1 class="central_a_esquerda">Indicadores Rápidos Super Show</h1>
-        <form action="" class="central">
+        <form action="" class="central" id="login_form">
             <label class="cadastro">
                 <h3>Faça seu Login</h3>
-                <input type="text" class="input_cadastro" placeholder="usuario" id="usuario" required>
+                <input type="text" class="input_cadastro" placeholder="usuario" id="usuario" >
                 <span class="alerta" id="alerta_usuario"></span>
             </label>
             <label class="cadastro">
-                <input type="password" class="input_cadastro" placeholder="*****" id="senha" required>
+                <input type="password" class="input_cadastro" placeholder="*****" id="senha" >
                 <span class="alerta" id="alerta_senha"></span>
             </label>
             <div class="login_div">
@@ -29,5 +29,6 @@
         
         
     </main>
+    <script type="module" src="/Servidor/login.js"></script>
 </body>
 </html>
