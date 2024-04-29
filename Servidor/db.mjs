@@ -1,3 +1,4 @@
+
 const dados_indicador=[{
     nome:"Média de Itens na Cesta",
     valor:0
@@ -14,8 +15,26 @@ const dados_indicador=[{
     valor:-5
 }]
 
+const lojas=[{
+    grupo:"Seridó",
+    loja:"Abel Cabral"
+},{
+    grupo:"Seridó",
+    loja:"Coophab"
+},{
+    grupo:"Gomes",
+    loja:"Rosa dos Ventos"
+}]
+
+const usuarios=[{
+    login:"teste",
+    senha:"1234",
+    grupo:"Seridó"
+}]
 const db={
-    dados_indicador
+    dados_indicador,
+    lojas,
+    usuarios
 }
 
 export default db
