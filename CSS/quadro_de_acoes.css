@@ -1,0 +1,21 @@
+.botoes_quadro_acoes{
+    padding: 1em;
+
+    margin: 1em 0;
+
+    width: 25vw;
+    border-radius: var(--curvatura-canto);
+
+    font-weight: bold;
+    color: var(--branco);
+
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.area_botoes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: min-content;
+    gap: 8px;
+}

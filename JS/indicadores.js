@@ -2,13 +2,17 @@ import db from "../Servidor/db.mjs"
 
 let lista_indicadores=db.dados_indicador
 
-lista_indicadores.sort(function(a, b) {
+function ordenar_lista_decrescente(lista){
+  lista.sort(function(a, b) {
     if(a.valor < b.valor) {
       return -1;
     } else {
       return true;
     }
-  });
+  })
+}
+
+ordenar_lista_decrescente(lista_indicadores)
 
 function criar_indicador(info_indicador){
 
