@@ -1,4 +1,5 @@
 import db from "../Servidor/db.mjs"
+
 let lista_indicadores=db.dados_indicador
 
 lista_indicadores.sort(function(a, b) {
@@ -38,3 +39,6 @@ function criar_indicador(info_indicador){
 lista_indicadores.forEach(function(info){
     criar_indicador(info)
 })
+
+const grupo_loja=localStorage.getItem("grupo")
+document.querySelector(".titulo_header").innerHTML=`Super Show ${grupo_loja}`
