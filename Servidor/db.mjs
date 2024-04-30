@@ -39,11 +39,7 @@ const usuarios=[{
     senha:"1234",
     grupo:"Gomes"
 }]
-const db={
-    dados_indicador,
-    associado,
-    usuarios
-}
+
 
 const quadro_de_acoes_media_itens_cesta=[{
     titulo:"Oferta Leve e Pague ou Combos",
@@ -84,4 +80,11 @@ const quadro_de_acoes_media_itens_cesta=[{
     }]
 }]
 
+
+const db={
+    dados_indicador,
+    associado,
+    usuarios,
+    quadro_de_acoes_media_itens_cesta
+}
 export default db

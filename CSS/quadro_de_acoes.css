@@ -2,8 +2,8 @@
     padding: 1em;
 
     margin: 1em 0;
-
-    width: 25vw;
+    min-width: 100px;
+    width: min-content;
     border-radius: var(--curvatura-canto);
 
     font-weight: bold;
