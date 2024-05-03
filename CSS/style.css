@@ -103,7 +103,7 @@ footer{
     width: 100vw;
     height: var(--altura-footer);
 
-    padding-top: 1em;
+    padding-top: 3px;
 
     box-sizing: border-box;
 
@@ -113,15 +113,29 @@ footer{
 
     gap: 0.25em;
 
+    overflow-x: auto;
+
     border-radius: var(--curvatura-canto) var(--curvatura-canto) 0 0;
 }
 footer a{
     text-decoration: none;
     color: var(--branco);
+    font-weight: bold;
 
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    height: var(--altura-footer);
+    padding-inline: 1em;
+    max-width: 20vw;
+    min-width: min-content;
+
+    border-radius: var(--curvatura-canto) var(--curvatura-canto) 0 0;
+    border: 2px solid var(--branco-escuro);
+
 }
 .legenda-icon-footer{
     font-size: var(--legenda-icone);
