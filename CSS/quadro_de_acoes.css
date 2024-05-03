@@ -1,9 +1,21 @@
+.area_botoes{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, min-content);
+    grid-template-rows: repeat(3, min-content);
+    gap: 8px;
+}
+
 .botoes_quadro_acoes{
     padding: 1em;
 
     margin: 1em 0;
     min-width: 100px;
     width: min-content;
+
+    min-height: 110px;
+    height: min-content;
+
     border-radius: var(--curvatura-canto);
 
     font-weight: bold;
@@ -13,9 +25,17 @@
 
 }
 
-.area_botoes{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: min-content;
-    gap: 8px;
+@media screen and (min-width: 576px) {
+    .area_botoes{
+        gap: 16px;
+    }
+
+    .botoes_quadro_acoes{
+        min-width: 150px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .area_botoes{
+        grid-template-columns: repeat(4, min-content);
+    }
 }
