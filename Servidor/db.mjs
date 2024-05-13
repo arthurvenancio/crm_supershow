@@ -46,7 +46,7 @@ const quadro_de_acoes_media_itens_cesta=[{
     texto:"<p>Uma forma bastante eficiente de elevar a quantidade de itens na cesta do cliente é realizar ofertas que induzam o consumidor a levar muitos produtos.</p><p>Na plataforma da mercafácil temos duas ofertas desse tipo: leve pague e combo.</p><p>Esses tipos de ofertas dão descontos para o consumidor caso ele leve vários produtos, para conhecer mais dessas ferramentas e como utilizá-las temos os dois treinamentos abaixo.</p><p>Contudo, para o sucesso da oferta é necessário que ela seja bem divulgada e que os produtos estejam bem expostos em loja.</p>",
     links:[{
         titulo_link:"Treinamento de Leve e Pague",
-        link:"https://docs.google.com/presentation/d/1Xi5OxR9mTjYGKsJNmi3LFvoSCPJv_BeQsaQN_JKCIic/edit?usp=sharing"
+        link:"https://docs.google.com/presentation/d/e/2PACX-1vSknPch9vG5RXC30nIyCmNOCebZj9HE1fyUI0Ld8q3B9JMvNgIbveDcUX7XMgK9ikbomp1nK9VlF1uq/embed?start=true&loop=false&delayms=3000"
     },{
         titulo_link:"Treinamento de Combo",
         link:"https://docs.google.com/presentation/d/1vJK0PGBzeQtu0JsOSKe5nLPkrDVSHlFfY0Gl2ywNocg/edit?usp=sharing"

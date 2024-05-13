@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,300;1,700&display=swap');
 
 :root{
-    --cinza-escuro:#252525;
+    --cinza-escuro:#002140;
+    --cinza-gradiente:#3B4E62;
     --cinza-claro:#797a82;
     --azul-escuro:#264296;
     --azul-claro:#54a8cc;
     --branco:#FFFFFF;
     --branco-escuro:#c0c1c2;
     --vermelho:#ed1a1a;
-    --amarelo:#FFCB27;
+    --amarelo:#FADD16;
     --verde:#0a8d15;
 
     --sombra:rgba(0, 0, 0, 0.4);
@@ -20,6 +21,7 @@
     --altura-header:3rem;
     --altura-footer:5rem;
     --distancia-sombra:2px;
+    --largura-botao:200px;
 
     --curvatura-canto:8px;
 }
@@ -33,7 +35,8 @@ body{
 }
 
 header{
-    background-color: var(--azul-escuro);
+    background: var(--azul-escuro);
+    color: var(--branco);
     height: var(--altura-header);
     width: 100vw;
 
@@ -45,7 +48,9 @@ header{
 
     padding-left: 1em;
     box-sizing: border-box;
+    box-shadow: 1px 2px 2px 0px var(--sombra);
 }
+
 .grupo_titulo_header{
     display: flex;
     align-items: center;
@@ -62,7 +67,7 @@ header{
 
 }
 .log_off{
-    background-color: var(--azul-claro);
+    background-color: transparent;
 
     min-width: 3em;
 
@@ -72,7 +77,6 @@ header{
     text-align: center;
 
     border: none;
-    border-radius: var(--curvatura-canto) 0 0 var(--curvatura-canto);
 }
 
 
@@ -96,7 +100,7 @@ main{
 
 
 footer{
-    background-color: var(--cinza-claro);
+    background-color: var(--cinza-gradiente);
     position: fixed;
     bottom: 0;
 
@@ -116,8 +120,10 @@ footer{
     overflow-x: auto;
 
     border-radius: var(--curvatura-canto) var(--curvatura-canto) 0 0;
+
+    box-shadow: -1px -2px 2px 0px var(--sombra);
 }
-footer a{
+footer button{
     text-decoration: none;
     color: var(--branco);
     font-weight: bold;
@@ -134,8 +140,10 @@ footer a{
     min-width: min-content;
 
     border-radius: var(--curvatura-canto) var(--curvatura-canto) 0 0;
-    border: 2px solid var(--branco-escuro);
 
+    background: linear-gradient(to top right, var(--cinza-claro) 0%, var(--cinza-escuro) 100%);
+    border: none;
+    box-shadow: 2px 2px 2px 0px var(--sombra);
 }
 .legenda-icon-footer{
     font-size: var(--legenda-icone);
@@ -159,13 +167,20 @@ footer a{
 
 }
 .botao_1{
-    background-color: var(--azul-claro);
+    background: linear-gradient(to bottom right, var(--cinza-gradiente) 50%, var(--cinza-escuro) 100%);
     border: none;
+    box-shadow: 2px 2px 2px 0px var(--sombra);
 }
 .botao_2{
     background-color: transparent;
     border: 2px solid var(--azul-claro);
 }
+.botao_3{
+    background: linear-gradient(to bottom right, #CC3333 64%, #7D312C 92%);
+    border: none;
+    box-shadow: 2px 2px 2px 0px var(--sombra);
+}
+
 .botao_unico{
     width: 80vw;
     font-size: var(--botão);
@@ -173,6 +188,24 @@ footer a{
     border-radius: var(--curvatura-canto);
 }
 
+.dropdown{
+    margin-inline: auto;
+
+    width: var(--largura-botao);
+
+    font-size: var(--botão);
+	color: var(--branco-escuro);
+
+    padding: 5px 10px 5px 10px;
+
+	background-color: var(--cinza-gradiente);
+	
+    border: 1px solid var(--cinza-claro);
+	border-radius: var(--curvatura-canto);
+    
+	cursor: pointer;
+	outline: none;
+}
 
 .cadastro{
     display: flex;
@@ -240,4 +273,25 @@ footer a{
     margin-top: 0;
     font-style: italic;
     display: none;
+}
+
+@media screen and (max-width:576px) {
+    header{
+        height: calc(2*var(--altura-header));
+    }
+    main{
+        top: calc(2*var(--altura-header));
+    }
+}
+
+@media screen and (min-width: 576px) {
+    :root{
+        --largura-botao:400px
+    }
+}
+
+@media screen and (min-width: 768px) {
+    :root{
+        --largura-botao:600px
+    }
 }

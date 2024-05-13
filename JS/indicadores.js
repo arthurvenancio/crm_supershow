@@ -18,10 +18,12 @@ function criar_indicador(info_indicador){
 
     const botao_indicador=document.createElement('button')
     botao_indicador.classList.add('botao_indicador')
-    botao_indicador.classList.add('botao_2')
+    
 
     if(info_indicador.valor<0){
-        botao_indicador.style.borderColor='var(--vermelho)'
+      botao_indicador.classList.add('botao_3')    
+    } else{
+      botao_indicador.classList.add('botao_1')
     }
 
     const valor_botao_indicador=document.createElement('h1')
@@ -46,3 +48,19 @@ lista_indicadores.forEach(function(info){
 
 const grupo_loja=localStorage.getItem("grupo")
 document.querySelector(".titulo_header").innerHTML=`Super Show ${grupo_loja}`
+
+function criar_lojas(){
+  db.associado.forEach(function(associado){
+    if(grupo_loja==associado.grupo){
+      associado.loja.forEach(function(loja){
+        var lojas = document.getElementById("lojas");
+        var option = document.createElement("option");
+        option.text =loja;
+        lojas.add(option);
+      })
+    }
+  })
+
+}
+
+criar_lojas()
