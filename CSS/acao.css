@@ -1,4 +1,6 @@
 .texto{
     width: 70%;
     margin-inline: auto;
+
+    margin-bottom: var(--altura-footer);
 }

@@ -281,6 +281,7 @@ footer button{
     }
     main{
         top: calc(2*var(--altura-header));
+        height: calc(100vh - 2*var(--altura-header) - var(--altura-footer));
     }
 }
 
